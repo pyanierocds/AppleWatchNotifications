@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Label" id="FIp-eD-rHe"/>
+                    </items>
+                    <menu key="menu" id="sfw-RM-3Nz">
+                        <items>
+                            <menuItem title="Menu Item" icon="add" id="zYh-kc-7fi"/>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="saluteLabel" destination="FIp-eD-rHe" id="8ZZ-Ck-eh5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="u0V-2m-deB" kind="relationship" relationship="dynamicNotificationInterface" id="jOI-f4-SPU"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="cWp-Xu-mE9">
+            <objects>
+                <notificationController hidesWhenLoading="NO" id="WSh-dg-090">
+                    <items>
+                        <label alignment="center" text="Title" textAlignment="center" numberOfLines="0" id="CTV-9N-jrZ"/>
+                        <imageView alignment="center" image="meetupLogo" id="6iV-jb-bGw"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="8tK-CB-Wfc"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="CTV-9N-jrZ" id="25X-Ww-nfw"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="222" y="871"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="vH6-vu-fSp">
+            <objects>
+                <notificationController hidesWhenLoading="NO" id="LeX-Pu-Oci">
+                    <items>
+                        <label alignment="center" text="Title" textAlignment="center" id="svb-xw-Weo"/>
+                        <imageView alignment="center" image="JR" id="n2B-WR-sYt"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="YES_CATEGORY" id="xUQ-sg-P1V"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="svb-xw-Weo" id="kwv-bj-3Aj"/>
+                        <segue destination="zib-N9-uj3" kind="relationship" relationship="dynamicNotificationInterface" id="byf-WM-2tM"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="225" y="1104"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="kxB-3P-UzH">
+            <objects>
+                <controller hidesWhenLoading="NO" id="u0V-2m-deB" customClass="NotificationController">
+                    <items>
+                        <label alignment="left" text="Dynamic" id="Jx9-zv-zAv"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="520" y="643"/>
+        </scene>
+        <!--Yes Notification Controller-->
+        <scene sceneID="1jJ-Ne-1UG">
+            <objects>
+                <controller hidesWhenLoading="NO" id="zib-N9-uj3" customClass="YesNotificationController">
+                    <items>
+                        <label width="136" alignment="center" text="Title" textAlignment="center" numberOfLines="0" id="HGY-zw-TMI"/>
+                        <imageView alignment="center" image="JR" id="rPA-8G-pVd"/>
+                        <label alignment="center" text="Message" textAlignment="center" numberOfLines="0" id="rAV-IN-VFL"/>
+                    </items>
+                    <connections>
+                        <outlet property="messageLabel" destination="rAV-IN-VFL" id="PJd-1T-za0"/>
+                        <outlet property="titleLabel" destination="HGY-zw-TMI" id="6sQ-46-FPC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="525" y="1104"/>
+        </scene>
+    </scenes>
+</document>

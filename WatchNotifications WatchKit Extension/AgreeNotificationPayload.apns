@@ -1,0 +1,23 @@
+{
+    "aps": {
+        "alert": {
+            "body": "MobileUY Rules!!",
+            "title": "MobileUY Rules!!"
+        },
+        "category": "AGREE_CATEGORY"
+    },
+    
+    "WatchKit Simulator Actions": [
+       {
+           "title": "Agree",
+           "identifier": "AGREE"
+       },
+       {
+           "title": "Disagree",
+           "identifier": "DISAGREE",
+           "destructive": 1
+       }
+    ],
+    
+    "customKey": "Custom Text"
+}

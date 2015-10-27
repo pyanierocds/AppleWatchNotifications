@@ -1,0 +1,23 @@
+{
+    "aps": {
+        "alert": {
+            "body": "Do you think JR is the best iOS developer ever?",
+            "title": "JR Sappe!"
+        },
+        "category": "YES_CATEGORY"
+    },
+    
+    "WatchKit Simulator Actions": [
+        {
+            "title": "Yes",
+            "identifier": "YES"
+        },
+       {
+       "title": "No",
+       "identifier": "NO",
+        "destructive": 1
+       }
+    ],
+    
+    "customKey": "Custom Text"
+}
